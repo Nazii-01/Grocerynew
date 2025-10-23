@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Grocery Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FreshMart Grocery</h1>
+    <p>Order your groceries from our local store 🥦</p>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>Available Groceries</h2>
+      <div class="product-list">
+        <div class="product">
+          <h3>Apples</h3>
+          <p>₹60 / kg</p>
+          <button onclick="addToCart('Apples', 60)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Tomatoes</h3>
+          <p>₹40 / kg</p>
+          <button onclick="addToCart('Tomatoes', 40)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Potatoes</h3>
+          <p>₹30 / kg</p>
+          <button onclick="addToCart('Potatoes', 30)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Milk</h3>
+          <p>₹25 / litre</p>
+          <button onclick="addToCart('Milk', 25)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>🛒 Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p id="total">Total: ₹0</p>
+      <button id="checkoutBtn">Checkout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 FreshMart Grocery | Fast & Fresh Delivery</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
